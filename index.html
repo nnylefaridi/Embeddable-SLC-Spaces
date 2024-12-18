@@ -2,19 +2,193 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>embedable</title>
-  
+  <title>Attempt</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<p class="codepen" data-height="680" data-default-tab="result" data-slug-hash="ByByGGZ" data-pen-title="Attempt" data-user="Nyle-Faridi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/Nyle-Faridi/pen/ByByGGZ">
-  Attempt</a> by Nyle Faridi (<a href="https://codepen.io/Nyle-Faridi">@Nyle-Faridi</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<!-- partial -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLC Spaces Floorplan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
   
+  <div class="switch-container">
+    <button id="btn-basement" class="switch" onclick="showDiv('basement')">Basement</button>
+    <button id="btn-floor-1" class="switch active" onclick="showDiv('floor-1')">1st floor</button>
+    <button id="btn-floor-2" class="switch" onclick="showDiv('floor-2')">2nd floor</button>
+    <button id="btn-floor-3" class="switch" onclick="showDiv('floor-3')">3rd floor</button>
+  </div>
+  <div id="basement" class="floor">
+  <div class="basement">
+    <div class="container">
+    <img src="https://i.imgur.com/gN0e3fE.jpeg" alt="Simple floorplan second floor" class="image">
+      
+      <!-- Icons -->
+    <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-9ca91057-4fb4-4c7f-91a4-b159debeecef-2" target="_blank">
+    <div class="icon" id="icon-lf">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 1" width="25px">
+      </a>
+      <div class="popup left">
+        <h3 style="font-size: 17px;">Lower Flex Space</h3>
+        <p style="font-size: 13px;">Bookable space</p>
+        <p style="font-size: 10px;">Occupency Limit: 50</p>
+        <div class="tip"></div>
+      </div>
+    </div>
+      <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-9ca91057-4fb4-4c7f-91a4-b159debeecef-0" target="_blank">
+    <div class="icon" id="icon-l0">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 1" width="25px">
+      </a>
+      <div class="popup left">
+        <h3 style="font-size: 17px;">Study Lounge 0134</h3>
+        <p style="font-size: 13px;">Study Lounge</p>
+        <p style="font-size: 10px;">Occupency Limit: 36</p>
+        <div class="tip"></div>
+      </div>
+    </div>
+      <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-9ca91057-4fb4-4c7f-91a4-b159debeecef-2" target="_blank">
+    <div class="icon" id="icon-la">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 1" width="25px">
+      </a>
+      <div class="popup right">
+        <h3 style="font-size: 17px;">Lower Atrium</h3>
+        <p style="font-size: 13px;">Bookable space</p>
+        <div class="tip"></div>
+      </div>
+    </div>
+  </div>
+  </div> <!-- end of basement floor -->
+  </div>
+  <div id="floor-1" class="floor">
+  <div class="floor-1">
+  <!-- The main container with image and icons -->
+  <div class="container">
+    <img src="https://i.imgur.com/33boaBE.jpeg" alt="Simple floorplan first floor" class="image">
+    
+    <!-- Icons -->
+    <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-28beee2a-ba23-4fb7-ba3f-557e89057e29-0" target="_blank">
+    <div class="icon" id="icon-1">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 1" width="25px">
+      </a>
+      <div class="popup diagonal-top-right">
+        <h3 style="font-size: 17px;">Great Hall</h3>
+        <p style="font-size: 13px;">Bookable space</p>
+        <div class="tip"></div>
+      </div>
+    </div>
+     <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-28beee2a-ba23-4fb7-ba3f-557e89057e29-4" target="_blank">
+    <div class="icon" id="icon-2">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 2" width="25px">
+      </a>
+      <div class="popup left">
+        <h3 style="font-size: 17px;">SLC Marketplace</h3>
+        <p style="font-size: 13px;">Bookable space / Marketplace</p>
+        <div class="tip"></div>
+      </div>
+    </div>
+    <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-28beee2a-ba23-4fb7-ba3f-557e89057e29-5" target="_blank">
+    <div class="icon" id="icon-3">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 3" width="25px">
+      </a>
+      <div class="popup right">
+        <h3 style="font-size: 17px;">Study Lounge 1123</h3>
+        <p style="font-size: 13px;">Bookable space / Eatery / Study Lounge</p>
+        <p style="font-size: 10px;">Occupency Limit: 155</p>
+        <div class="tip"></div>
+      </div>
+    </div>
+    <a href="https://uwaterloo.ca/student-life-centre/turnkey-desk" target="_blank">
+    <div class="icon" id="icon-4">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 4" width="25px">
+      </a>
+      <div class="popup diagonal-bottom-left">
+        <h3 style="font-size: 17px;">SLC Turnkey Desk</h3>
+        <p style="font-size: 13px;">WUSA Help Desk</p>
+        <div class="tip"></div>
+      </div>
+    </div>
+    <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-28beee2a-ba23-4fb7-ba3f-557e89057e29-1" target="_blank">
+    <div class="icon" id="icon-5">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 5" width="25px">
+      </a>
+      <div class="popup diagonal-bottom-left">
+        <h3 style="font-size: 17px;">Multi-Purpose Room</h3>
+        <p style="font-size: 13px;">Bookable Space</p>
+        <p style="font-size: 10px;">Occupency Limit: 90</p>
+        <div class="tip"></div>
+      </div>
+    </div>
+  </div>
+  </div> <!-- end of first floor -->
+  </div>
+  <div id="floor-2" class="floor">
+  <div class="floor-2">
+    <div class="container">
+    <img src="https://i.imgur.com/ErfQV1X.jpeg" alt="Simple floorplan second floor" class="image">
+      
+      <!-- Icons -->
+    <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-edaaf08c-f675-4178-b465-a5294493efb6-0" target="_blank">
+    <div class="icon" id="icon-bg">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 1" width="25px">
+      </a>
+      <div class="popup left">
+        <h3 style="font-size: 17px;">Black and Gold room</h3>
+        <p style="font-size: 13px;">Bookable space</p>
+        <p style="font-size: 10px;">Occupency Limit: 120</p>
+        <div class="tip"></div>
+      </div>
+    </div>
+  </div>
+  </div> <!-- end of second floor -->
+  </div>
+  <div id="floor-3" class="floor">
+  <div class="floor-3" class="floor">
+    <div class="container">
+    <img src="https://i.imgur.com/DSshlTG.jpeg" alt="Simple floorplan third floor" class="image">
+      
+      <!-- Icons -->
+      <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-ae93959b-1b2a-41c6-92ff-a577e0260768-2" target="_blank">
+    <div class="icon" id="icon-l3">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 1" width="25px">
+      </a>
+      <div class="popup diagonal-bottom-left">
+        <h3 style="font-size: 17px;">Lounge on 3</h3>
+        <p style="font-size: 13px;">Study Lounge</p>
+        <p style="font-size: 10px;">Occupency Limit: 80</p>
+        <div class="tip"></div>
+      </div>
+      </div>
+    <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-ae93959b-1b2a-41c6-92ff-a577e0260768-2" target="_blank">
+    <div class="icon" id="icon-mf">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 1" width="25px">
+      </a>
+      <div class="popup left">
+        <h3 style="font-size: 17px;">Multi-faith Room</h3>
+        <p style="font-size: 13px;">Shared prayer space</p>
+        <div class="tip"></div>
+      </div>
+      </div>
+      <a href="https://uwaterloo.ca/student-life-centre/inside-student-life-centre/slc-spaces#uw-lightbox-ae93959b-1b2a-41c6-92ff-a577e0260768-0" target="_blank">
+    <div class="icon" id="icon-nst">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265943/grey-circle-08-outlined-icon-md.png" alt="Icon 1" width="25px">
+      </a>
+      <div class="popup left">
+        <h3 style="font-size: 17px;">The Nest</h3>
+        <p style="font-size: 13px;">Study Space</p>
+        <div class="tip"></div>
+        </div>
+  </div>
+  </div> <!-- end of third floor -->
+
+  <script src="script.js"></script>
+
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>
