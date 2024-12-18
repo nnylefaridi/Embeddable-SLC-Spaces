@@ -65,7 +65,7 @@ body {
 }
 
 .icon .popup.diagonal-top-right .tip {
-  bottom: -10px;
+  bottom:-10px;
   left: 10px;
   border-top-color: white;
 }
@@ -210,8 +210,7 @@ body {
 }
 
 #floor-1 {
-  display: block;
-  /* Display the first floor by default */
+  display: block; /* Display the first floor by default */
 }
 
 .switch.active {
